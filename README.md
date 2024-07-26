@@ -1,6 +1,6 @@
 # MatrixKit: Advanced Synthetic Matrix Generation for Machine Learning and Scientific Computing
 
-## Link to the project repository
+## Link to the initial project repository
 
 [GitHub repo "opencampus-preconditioner-ai-project"](https://github.com/24io/opencampus-preconditioner-ai-project)
 

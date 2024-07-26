@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="matrixkit",
     version="0.1.0",
-    author="Toni Dieckhoff, Anna-Valentina Hirsch",
+    author=["Toni Dieckhoff", "Anna-Valentina Hirsch"],
     author_email="a-valentina.hirsch@hotmail.com",
     description="Synthetic Matrix Generation for Machine Learning and Scientific Computing",
     long_description=long_description,
