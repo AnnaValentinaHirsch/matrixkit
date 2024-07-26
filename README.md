@@ -9,8 +9,7 @@ MatrixKit is a sophisticated Python library designed for generating synthetic ma
 primarily focused on machine learning applications. 
 It was created as part of a machine learning project at OpenCampus Kiel, 
 where my project partner and I faced the challenge of finding labelled real-world matrices to train our models. 
-MatrixKit offers powerful tools for creating custom matrices that simulate real-world data.
-structures and patterns.
+MatrixKit offers powerful tools for creating custom matrices that simulate real-world data structures and patterns.
 
 Additionally, the library contains a variety of functions to create and apply block jacobi preconditioners. 
 
