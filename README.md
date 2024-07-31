@@ -1,4 +1,4 @@
-# MatrixKit: Advanced Synthetic Matrix Generation for Machine Learning and Scientific Computing
+# MatrixKit: Synthetic Matrix Generation for Machine Learning and Scientific Computing
 
 ## Link to the initial project repository
 
