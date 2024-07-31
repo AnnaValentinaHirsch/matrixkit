@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="matrixkit",
     version="0.1.1",
-    author=["Toni Dieckhoff", "Anna-Valentina Hirsch"],
+    author=["Toni Johann Schulze Dieckhoff", "Anna-Valentina Hirsch"],
     author_email="a-valentina.hirsch@hotmail.com",
     description="Synthetic Matrix Generation for Machine Learning and Scientific Computing",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/your-repo-name",
+    url="https://github.com/AnnaValentinaHirsch/matrixkit",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
