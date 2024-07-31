@@ -171,12 +171,14 @@ def run_gmres_experiments(input_matrices_list, preconditioners_list, b):
 
     for input_name, input_matrices in input_matrices_list:
         for prec_name, preconditioner_source in preconditioners_list:
-            print(f'Solving {input_name} with {prec_name}')
-            x, info, iters, residuals = solve_with_gmres_monitored(input_matrices, b, preconditioner_source)
+            print(f'Solving {input_name} with {prec_name}...')
+            x, info, iters, residuals = prec.solve_with_gmres_monitored(input_matrices, b, preconditioner_source)
 
             converged = np.sum(info == 0)
             total_systems = len(info)
             percent_converged = (converged / total_systems) * 100
+
+            iters_converged = [iters[i] for i in range(total_systems) if info[i] == 0]
 
             results.append({
                 'Matrix Type': input_name,
@@ -184,10 +186,10 @@ def run_gmres_experiments(input_matrices_list, preconditioners_list, b):
                 'Converged': converged,
                 'Total Systems': total_systems,
                 'Percent Converged': percent_converged,
-                'Mean Iterations': np.mean(iters),
-                'Median Iterations': np.median(iters),
-                'Max Iterations': np.max(iters),
-                'Min Iterations': np.min(iters)
+                'Mean Iterations': np.mean(iters_converged),
+                'Median Iterations': np.median(iters_converged),
+                'Max Iterations': np.max(iters_converged),
+                'Min Iterations': np.min(iters_converged)
             })
 
     return pd.DataFrame(results)
